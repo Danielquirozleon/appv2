@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", function () {
             const clienteId = this.value;
 
             if (clienteId) {
-                fetch(`/controllers/DireccionController.php?action=obtenerDirecciones&numero_cliente=${clienteId}`)
+                fetch(`?r=direccion/obtenerDirecciones&numero_cliente=${clienteId}`)
                     .then(response => response.json())
                     .then(data => {
                         direccionSelect.innerHTML = '<option value="">Selecciona una dirección</option>';

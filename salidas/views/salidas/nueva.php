@@ -29,3 +29,4 @@ require_once __DIR__ . '/../templates/layout.php';
     </form>
 </div>
 <script src="<?= BASE_URL ?>assets/js/productos.js"></script>
+<?php include __DIR__ . '/../templates/footer.php'; ?>

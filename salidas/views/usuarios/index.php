@@ -31,4 +31,11 @@ require_once __DIR__ . '/../templates/layout.php';
                 </td>
                 <td>
                     <a href="<?= BASE_URL ?>?r=user/form&id=<?= $u['id'] ?>" class="btn btn-sm btn-warning">Editar</a>
-                    <a href="<?= BASE_URL ?>?r=user/delete&id=<?= $u['id'] ?>" class="btn btn-sm btn-danger" onclick="return confirm('Desactivar usuario?'
+                    <a href="<?= BASE_URL ?>?r=user/delete&id=<?= $u['id'] ?>" class="btn btn-sm btn-danger" onclick="return confirm('Desactivar usuario?')">Eliminar</a>
+                </td>
+            </tr>
+        <?php endforeach; ?>
+        </tbody>
+    </table>
+</div>
+<?php include __DIR__ . '/../templates/footer.php'; ?>
