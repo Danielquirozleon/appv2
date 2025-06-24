@@ -22,3 +22,4 @@ require_once __DIR__ . '/../templates/layout.php';
         <button type="submit" class="btn btn-primary">Importar</button>
     </form>
 </div>
+<?php include __DIR__ . '/../templates/footer.php'; ?>

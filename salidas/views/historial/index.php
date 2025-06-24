@@ -28,3 +28,4 @@ require_once __DIR__ . '/../templates/layout.php';
         </tbody>
     </table>
 </div>
+<?php include __DIR__ . '/../templates/footer.php'; ?>

@@ -15,6 +15,9 @@ $_SESSION['LAST_ACTIVITY'] = time();
 
 // Determina ruta: controlador/acción (p. ej. ?r=auth/login)
 $route  = $_GET['r'] ?? 'auth/login';
+if (!preg_match('/^[a-zA-Z0-9_]+(\/[a-zA-Z0-9_]+)?$/', $route)) {
+    $route = 'auth/login';
+}
 [$ctrl, $action] = array_pad(explode('/', $route, 2), 2, 'index');
 $controllerName = ucfirst($ctrl) . 'Controller';
 $controllerFile = __DIR__ . '/controller/' . $controllerName . '.php';

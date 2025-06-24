@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", function () {
             const productId = this.value.trim();
 
             if (productId !== "") {
-                fetch(`/controllers/ProductoController.php?action=buscar&PRODUCT_ID=${productId}`)
+                fetch(`?r=producto/buscar&PRODUCT_ID=${productId}`)
                     .then(res => res.json())
                     .then(data => {
                         if (data && data.exists) {
